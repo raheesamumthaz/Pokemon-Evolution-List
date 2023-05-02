@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-api",
+  "version": "1.0.0",
+  "description": "AWS Lamda function in Node.js to get Pokemon evolution chain",
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raheesamumthaz/Pokemon-Evolution-List.git"
+  },
+  "author": "Raheesa Mumthaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raheesamumthaz/Pokemon-Evolution-List/issues"
+  },
+  "homepage": "https://github.com/raheesamumthaz/Pokemon-Evolution-List#readme"
+}
