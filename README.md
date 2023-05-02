@@ -18,9 +18,9 @@ The Backend API is written in AWS Lambda and the Frontend application is using A
 ## How to run the project locally
 Clone repository and install dependencies:
 
+Install required [Node](https://nodejs.org/en/download)
+
     git clone https://github.com/raheesamumthaz/Pokemon-Evolution-List.git
-    
-    Install required [Node](https://nodejs.org/en/download)
 
     To run the Node API:
 
@@ -36,7 +36,7 @@ Clone repository and install dependencies:
     npm install
     ng serve
     The base URL of the UI server is <http://localhost:4200/>
-    
+
 ## Endpoints
 
 
