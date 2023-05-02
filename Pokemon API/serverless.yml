@@ -1,0 +1,19 @@
+service: node-lambda
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x 
+  
+functions:
+  lambda:
+    handler: src/handler.handler
+    events:
+      - httpApi:
+          path: /pokemonApi/getEvolutionChain/{pokemonName}
+          method: get
+          
+plugins:
+  - serverless-offline
+
+  
