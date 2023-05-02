@@ -1,1 +1,43 @@
-<p>view works!</p>
+<ng-container *ngIf="pokemon">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="mt-2">
+            <h1>{{ pokemon.name | titlecase }}</h1>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="https://img.pokemondb.net/sprites/home/normal/2x/avif//{{
+              pokemon.name
+            }}.avif"
+            alt=""
+            class="img-fluid d-block mx-auto"
+            style="width: 300px"
+          />
+        </div>
+      </div>
+    </div>
+  
+    <!-- evolution -->
+    <div class="row">
+      <div *ngFor="let evolution of pokemon.evolutions" class="col-sm mb-3">
+        <div class="card" [routerLink]="['/view', evolution]">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-3">
+              {{ evolution | titlecase }}
+            </h4>
+            <img
+              src="https://img.pokemondb.net/sprites/home/normal/2x/avif//{{
+                evolution
+              }}.avif"
+              alt=""
+              class="img-fluid d-block mx-auto"
+              style="width: 150px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  

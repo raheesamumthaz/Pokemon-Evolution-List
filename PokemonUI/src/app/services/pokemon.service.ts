@@ -29,4 +29,8 @@ export class PokemonService {
   
     return this.http.get(url);
   }
+  getPokemonVariations(name: string): Observable<any> {
+    const url = `${environment.apiUrl}getEvolutionChain/${name}`;
+    return this.http.get(url);
+  }
 }
