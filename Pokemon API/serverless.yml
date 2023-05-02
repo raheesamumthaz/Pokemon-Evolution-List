@@ -4,6 +4,7 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs12.x 
+  timeout: 10
   
 functions:
   lambda:
@@ -12,6 +13,10 @@ functions:
       - httpApi:
           path: /pokemonApi/getEvolutionChain/{pokemonName}
           method: get
+
+custom:
+  serverless-offline:
+    httpPort: 4000
           
 plugins:
   - serverless-offline
