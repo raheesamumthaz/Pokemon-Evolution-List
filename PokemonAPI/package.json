@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "AWS Lamda function in Node.js to get Pokemon evolution chain",
   "scripts": {
+    "start": "sls offline",
     "test": "grunt test ",
     "build":"grunt uglify"
     
