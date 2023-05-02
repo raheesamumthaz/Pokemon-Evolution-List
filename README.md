@@ -6,7 +6,7 @@ The Backend API is written in AWS Lambda and the Frontend application is using A
 
 ## Project Structure and Info
  PokemonAPI : AWS Lambda function handler in Node.js
- 
+
  PokemonUI : Angular frontend application
 
 ## Supported Node Versions
@@ -20,7 +20,7 @@ Clone repository and install dependencies:
 
     git clone https://github.com/raheesamumthaz/Pokemon-Evolution-List.git
     
-    Install required [Node](https://nodejs.org/en/download). 
+    Install required [Node](https://nodejs.org/en/download)
 
     To run the Node API:
 
@@ -28,16 +28,15 @@ Clone repository and install dependencies:
     npm install
     npm start or serverless offline
     The base URL of the REST server is <http://localhost:4000/pokemonApi>
-
     To run test : npm test or grunt test
 
     To run the UI:
      
-    cd PokemonUI:
-    
+    cd PokemonUI
     npm install
     ng serve
     The base URL of the UI server is <http://localhost:4200/>
+    
 ## Endpoints
 
 
@@ -47,8 +46,12 @@ Clone repository and install dependencies:
 ## References
 
 [Serverless framework](https://www.serverless.com/)
+
 [Serverless offline](https://www.serverless.com/plugins/serverless-offline)
+
 [Angular ](https://angular.io/)
+
+[AWS LAMBDA](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 
 
